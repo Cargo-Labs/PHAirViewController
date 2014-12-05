@@ -9,6 +9,8 @@
 #import <UIKit/UIKit.h>
 
 #import "PHSessionView.h"
+#import "PHAirViewAppearanceLayout.h"
+
 
 @protocol PHAirMenuDelegate <NSObject>
 @optional
@@ -20,6 +22,8 @@
 - (void)didHideAirViewController;
 
 - (NSIndexPath*)indexPathDefaultValue;
+
+- (PHAirViewAppearanceLayout *)appearanceLayout;
 @end
 
 @protocol PHAirMenuDataSource <NSObject>

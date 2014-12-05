@@ -159,6 +159,11 @@ static NSString * const PHSegueRootIdentifier  = @"phair_root";
     self.delegate = self;
     self.dataSource = self;
     
+    // if above initialization routines are not called
+    if (!_appearanceLayout && [self.delegate respondsToSelector:@selector(appearanceLayout)]) {
+        _appearanceLayout = [self.delegate appearanceLayout];
+    }
+    
     // Init contentView
     [self.view addSubview:self.wrapperView];
     [self.wrapperView addSubview:self.contentView];
