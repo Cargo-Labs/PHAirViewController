@@ -19,7 +19,7 @@
 
 #pragma mark - PHAirMenuDelegate & DataSource
 
-- (NSInteger)numberOfSession
+- (NSInteger)numberOfSessions
 {
     return 1;
 }
