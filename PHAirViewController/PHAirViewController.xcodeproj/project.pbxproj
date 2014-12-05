@@ -29,6 +29,7 @@
 		48F2B3B118AA52A400B47D4B /* PHAirViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48F2B3AA18AA52A400B47D4B /* PHAirViewController.m */; };
 		48F2B3B318AA52A400B47D4B /* PHSessionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 48F2B3AE18AA52A400B47D4B /* PHSessionView.m */; };
 		48F2B3B518AA53F400B47D4B /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48F2B3B418AA53F400B47D4B /* QuartzCore.framework */; };
+		D37B61781A317FBC00782A4C /* PHAirViewAppearanceLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = D37B61771A317FBC00782A4C /* PHAirViewAppearanceLayout.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +76,8 @@
 		48F2B3AD18AA52A400B47D4B /* PHSessionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PHSessionView.h; sourceTree = "<group>"; };
 		48F2B3AE18AA52A400B47D4B /* PHSessionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PHSessionView.m; sourceTree = "<group>"; };
 		48F2B3B418AA53F400B47D4B /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		D37B61761A317FBC00782A4C /* PHAirViewAppearanceLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PHAirViewAppearanceLayout.h; sourceTree = "<group>"; };
+		D37B61771A317FBC00782A4C /* PHAirViewAppearanceLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PHAirViewAppearanceLayout.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -212,6 +215,8 @@
 		48F2B3A818AA52A400B47D4B /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				D37B61761A317FBC00782A4C /* PHAirViewAppearanceLayout.h */,
+				D37B61771A317FBC00782A4C /* PHAirViewAppearanceLayout.m */,
 				48F2B3A918AA52A400B47D4B /* PHAirViewController.h */,
 				48F2B3AA18AA52A400B47D4B /* PHAirViewController.m */,
 				48F2B3AD18AA52A400B47D4B /* PHSessionView.h */,
@@ -327,6 +332,7 @@
 				48F2B3AF18AA52A400B47D4B /* UIViewAdditions.m in Sources */,
 				48F2B3B118AA52A400B47D4B /* PHAirViewController.m in Sources */,
 				48F2B39E18AA527A00B47D4B /* PHMenuViewController.m in Sources */,
+				D37B61781A317FBC00782A4C /* PHAirViewAppearanceLayout.m in Sources */,
 				48F2B3A018AA527A00B47D4B /* PHViewController.m in Sources */,
 				48F2B36F18AA51F400B47D4B /* main.m in Sources */,
 				38BC4A7A19D6431F00F1C7A3 /* PPImageTitleButton.m in Sources */,
