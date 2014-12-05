@@ -66,7 +66,7 @@ static NSString * const PHSegueRootIdentifier  = @"phair_root";
 @property (nonatomic, strong) UIImageView * airImageView;
 @property (nonatomic, strong) UIScrollView *leftViewWrapper;
 
-@property (nonatomic)         float         lastDeegreesRotateTransform;
+@property (nonatomic)         float         lastDegreesRotateTransform;
 
 // pan for scroll
 @property (nonatomic, strong) UIPanGestureRecognizer * scrollLeftViewPanGestureRecognizer;
@@ -83,7 +83,7 @@ static NSString * const PHSegueRootIdentifier  = @"phair_root";
 @implementation PHAirViewController {
     
     // number of data
-    NSInteger  session;
+    NSInteger  sessions;
     NSArray  * rowsOfSession;
     
     // sesion view
@@ -142,6 +142,7 @@ static NSString * const PHSegueRootIdentifier  = @"phair_root";
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
     if ([self respondsToSelector:@selector(setEdgesForExtendedLayout:)]) {
         [self setEdgesForExtendedLayout:NO];
     }
@@ -166,7 +167,6 @@ static NSString * const PHSegueRootIdentifier  = @"phair_root";
     [self.leftViewWrapper addSubview:self.leftView];
     [self.contentView addSubview:self.leftViewWrapper];
     [self.contentView addSubview:self.rightView];
-  
   
     // Init debugging coloring
     self.leftView.backgroundColor = _appearanceLayout.leftViewDebuggingColor;
@@ -426,7 +426,7 @@ static NSString * const PHSegueRootIdentifier  = @"phair_root";
     // distanceScroll ---> ?
     // max : self.view.height/2 tương ứng với abs(kDegressRotateToOut - kDegreesRotate)
     float rotateDegress = (distanceScroll * abs(kAirImageViewRotateMax - kAirImageViewRotate))/(self.view.height/2);
-    self.lastDeegreesRotateTransform = rotateDegress;
+    self.lastDegreesRotateTransform = rotateDegress;
     
     // Rotate airImageView
     CATransform3D airImageRotate = CATransform3DIdentity;
@@ -549,13 +549,13 @@ static NSString * const PHSegueRootIdentifier  = @"phair_root";
 
 - (void)rotateAirImage
 {
-    if (self.lastDeegreesRotateTransform > 0) {
+    if (self.lastDegreesRotateTransform > 0) {
         [UIView animateWithDuration:0.2 animations:^{
             CATransform3D airImageRotate = self.airImageView.layer.transform;
-            airImageRotate = CATransform3DRotate(airImageRotate, AirDegreesToRadians(self.lastDeegreesRotateTransform), 0, 1, 0);
+            airImageRotate = CATransform3DRotate(airImageRotate, AirDegreesToRadians(self.lastDegreesRotateTransform), 0, 1, 0);
             self.airImageView.layer.transform = airImageRotate;
         }completion:^(BOOL finished) {
-            self.lastDeegreesRotateTransform = 0;
+            self.lastDegreesRotateTransform = 0;
         }];
     } else {
         
@@ -571,7 +571,7 @@ static NSString * const PHSegueRootIdentifier  = @"phair_root";
                 airImageRotate = CATransform3DRotate(airImageRotate, AirDegreesToRadians(rotateDegress), 0, 1, 0);
                 self.airImageView.layer.transform = airImageRotate;
             }completion:^(BOOL finished) {
-                self.lastDeegreesRotateTransform = 0;
+                self.lastDegreesRotateTransform = 0;
             }];
         }];
     }
@@ -583,17 +583,18 @@ static NSString * const PHSegueRootIdentifier  = @"phair_root";
 {
     if (!self.dataSource) return;
     
-    // Get number session
-    session = [self.dataSource numberOfSession];
+    // Get number sessions
+    sessions = [self.dataSource numberOfSessions];
+    assert(sessions > 0);
   
     // leftViewWrapper
-    self.leftViewWrapper.scrollEnabled = session == 1 && _appearanceLayout.enableLeftViewBouncinessWithOnlyOneSession;
-    self.scrollLeftViewPanGestureRecognizer.enabled = session > 1;
+    self.leftViewWrapper.scrollEnabled = sessions == 1 && _appearanceLayout.enableLeftViewBouncinessWithOnlyOneSession;
+    self.scrollLeftViewPanGestureRecognizer.enabled = sessions > 1;
 
     // Init
     NSMutableArray * tempThumbnails = [NSMutableArray array];
     NSMutableArray * tempViewControllers = [NSMutableArray array];
-    for (int i = 0 ; i < session; i ++) {
+    for (int i = 0 ; i < sessions; i ++) {
         [tempThumbnails addObject:[NSMutableDictionary dictionary]];
         [tempViewControllers addObject:[NSMutableDictionary dictionary]];
     }
@@ -603,14 +604,14 @@ static NSString * const PHSegueRootIdentifier  = @"phair_root";
     
     // Get number rows of session
     NSMutableArray * temp = [NSMutableArray array];
-    for (int i = 0; i < session; i ++) {
+    for (int i = 0; i < sessions; i ++) {
         [temp addObject:@([self.dataSource numberOfRowsInSession:i])];
     }
     rowsOfSession = [NSArray arrayWithArray:temp];
     
     // Init PHSessionView
     int sessionHeight = self.view.frame.size.height - _appearanceLayout.heightAirMenuSection;
-    for (int i = 0; i < session; i ++) {
+    for (int i = 0; i < sessions; i ++) {
         PHSessionView * sessionView = sessionViews[@(i)];
         if (!sessionView) {
             sessionView = [[PHSessionView alloc] initWithFrame:CGRectMake(_appearanceLayout.sessionViewLeftPadding, 0, kSessionWidth, sessionHeight)];
@@ -645,7 +646,7 @@ static NSString * const PHSegueRootIdentifier  = @"phair_root";
     }
     
     // Init menu item for session
-    for (int i = 0; i < session; i ++) {
+    for (int i = 0; i < sessions; i ++) {
         PHSessionView * sessionView = sessionViews[@(i)];
         sessionView.containView.frame = CGRectMake(0, _appearanceLayout.heightAirMenuSection, kSessionWidth, sessionHeight - _appearanceLayout.heightAirMenuSection);
         // Remove all sub-view for contain of PHSessionView
@@ -785,9 +786,9 @@ static NSString * const PHSegueRootIdentifier  = @"phair_root";
 
 #pragma mark - PHAirMenuDelegate
 
-- (NSInteger)numberOfSession { return 0; }
+- (NSInteger)numberOfSessions { return 0; }
 
-- (NSInteger)numberOfRowsInSession:(NSInteger)sesion { return  0; }
+- (NSInteger)numberOfRowsInSession:(NSInteger)session { return  0; }
 
 - (NSString*)titleForHeaderAtSession:(NSInteger)session { return @""; }
 

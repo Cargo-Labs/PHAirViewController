@@ -24,8 +24,8 @@
 
 @protocol PHAirMenuDataSource <NSObject>
 @required
-- (NSInteger)numberOfSession;
-- (NSInteger)numberOfRowsInSession:(NSInteger)sesion;
+- (NSInteger)numberOfSessions;
+- (NSInteger)numberOfRowsInSession:(NSInteger)session;
 - (NSString*)titleForRowAtIndexPath:(NSIndexPath*)indexPath;
 - (NSString*)titleForHeaderAtSession:(NSInteger)session;
 

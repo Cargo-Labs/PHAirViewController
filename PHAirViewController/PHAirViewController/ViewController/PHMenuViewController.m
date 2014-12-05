@@ -25,7 +25,7 @@
 
 #pragma mark - PHAirMenuDelegate
 
-- (NSInteger)numberOfSession
+- (NSInteger)numberOfSessions
 {
     return data.count;
 }
