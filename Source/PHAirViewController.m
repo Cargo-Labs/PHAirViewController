@@ -625,7 +625,7 @@ static NSString * const PHSegueRootIdentifier  = @"phair_root";
     rowsOfSession = [NSArray arrayWithArray:temp];
     
     // Init PHSessionView
-    int sessionHeight = self.view.frame.size.height - _appearanceLayout.heightAirMenuSection;
+    CGFloat sessionHeight = self.view.frame.size.height;
     for (int i = 0; i < sessions; i ++) {
         PHSessionView * sessionView = sessionViews[@(i)];
         if (!sessionView) {
@@ -908,7 +908,7 @@ static NSString * const PHSegueRootIdentifier  = @"phair_root";
 {
     if (!_leftView) {
         // leftView content sessionView
-        _leftView = [[UIView alloc] initWithFrame:CGRectMake(0, -(self.view.height - _appearanceLayout.heightAirMenuSection), kSessionWidth, (self.view.height - _appearanceLayout.heightAirMenuSection)*3)];
+        _leftView = [[UIView alloc] initWithFrame:CGRectMake(0, -(self.view.height), kSessionWidth, self.view.height * 3)];
         _leftView.userInteractionEnabled = YES;
     }
     return _leftView;
@@ -937,7 +937,7 @@ static NSString * const PHSegueRootIdentifier  = @"phair_root";
 {
   // BUG: There is a bug in the translation of the leftView.layer.transform. Too hard to fix. Thus need to reset it its frame
   _leftView.layer.transform = CATransform3DIdentity;
-  _leftView.frame = CGRectMake(0, -(self.view.height - _appearanceLayout.heightAirMenuSection), kSessionWidth, (self.view.height - _appearanceLayout.heightAirMenuSection)*3);
+  _leftView.frame = CGRectMake(0, -(self.view.height), kSessionWidth, self.view.height*3);
 }
 #pragma mark - Show/Hide air view controller
 
