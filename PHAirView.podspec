@@ -6,10 +6,10 @@ Pod::Spec.new do |s|
                        An Airbnb like Sliding Menu
                        WOW
                        DESC
-  s.homepage         = "https://github.com/thedamfr/PHAirViewController"
+  s.homepage         = "https://github.com/TaPhuocHai/PHAirViewController"
   s.license          = 'MIT'
   s.author           = { "Phuoc Hai" => "taphuochai@gmail.com" }
-  s.source           = { :git => "https://github.com/thedamfr/PHAirViewController.git", :tag => s.version.to_s }
+  s.source           = { :git => "https://github.com/TaPhuocHai/PHAirViewController.git", :tag => s.version.to_s }
 
   s.platform     = :ios, '5.0'
   s.requires_arc = true

@@ -7,214 +7,220 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		09231C99A5A543988934C81A /* PHAirViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 2B8A05D36B944D13961CD8C1 /* PHAirViewController.h */; };
-		1E83F895960C4427A63B19BD /* UIViewAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = F5173328D32E4F63B5499C97 /* UIViewAdditions.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
-		2D11504B9D59424E93E58E30 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70B3440244664A0BB7C96609 /* Foundation.framework */; };
-		30562033471F4C0FBFE9D68C /* Pods-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D8129168FED84D47B7D57DCE /* Pods-dummy.m */; };
-		3409740636FE4BE9B2A91788 /* PHSessionView.h in Headers */ = {isa = PBXBuildFile; fileRef = E528C7191BD944428BF108B2 /* PHSessionView.h */; };
-		38B6775A19D66F65009F8291 /* PHAirViewAppearanceLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 38B6775919D66F65009F8291 /* PHAirViewAppearanceLayout.m */; };
-		38B6776019D68269009F8291 /* PPImageTitleButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 38B6775F19D68269009F8291 /* PPImageTitleButton.m */; };
-		4BFF001CDDED46F5B1D1F83C /* PHSessionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AED965099D24143A731ABAA /* PHSessionView.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
-		6C8724A049974C878BF5C5F1 /* PHAirViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D0B443250814DEA8866BBC1 /* PHAirViewController.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
-		6FDA802B661743FF88F13F64 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70B3440244664A0BB7C96609 /* Foundation.framework */; };
-		74EDFA663C484C13B12F08AB /* Pods-PHAirView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 858D8D492EA24DEAA27BA53D /* Pods-PHAirView-dummy.m */; };
-		A82C027ED47C41F79A9ECFF9 /* libPods-PHAirView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 997BC06C6EDE40519D0AA6D7 /* libPods-PHAirView.a */; };
-		F91E2CF65D034960B28F8428 /* UIViewAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 6AD21B4B5C3B456D978BF9BA /* UIViewAdditions.h */; };
+		1C941992539CD2C8D6576FEB /* PPImageTitleButton.m in Sources */ = {isa = PBXBuildFile; fileRef = D3E81F32C31823E1CF84ED7E /* PPImageTitleButton.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		3A01055253B7F88F88E22A26 /* UIViewAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = B0D1F474136396940D51371B /* UIViewAdditions.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		3E4BDBD180CC445AE2A6DCEE /* PHAirViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E7E400A06B18403EFC1CA44 /* PHAirViewController.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		3F11B94E0D20D976F6689A8B /* PHAirViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 19D5781A57AD4BA78C797931 /* PHAirViewController.h */; };
+		48F31056689B48F34D7FA97B /* PHSessionView.h in Headers */ = {isa = PBXBuildFile; fileRef = D08FF652A72BDAA46A6AAE0B /* PHSessionView.h */; };
+		62C6968D73F18AE9357EFECB /* PHSessionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AD2748CCBBE4148219A6DF6 /* PHSessionView.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		6B6AE36F63F19D8CD78D5D49 /* UIViewAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = C187DB171C4E26A585AC43F1 /* UIViewAdditions.h */; };
+		6C90AFB4FC60EAF060269BA2 /* PPImageTitleButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 67FD68D7F604DEB16F0F1545 /* PPImageTitleButton.h */; };
+		71526BE0C02B6731ADB5D426 /* PHAirViewAppearanceLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = F6EED946722242AEA13AF029 /* PHAirViewAppearanceLayout.h */; };
+		7648ECF8C822E0FDCB7A8E8D /* PHAirViewAppearanceLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A6ECF626B4E461B9F333B71 /* PHAirViewAppearanceLayout.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		8FAA0837B48921BCC6981FDB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC75C8E3E074128D8BC4F49C /* Foundation.framework */; };
+		A0867704D1A4E2519725FA59 /* Pods-PHAirView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 46A829CF2709C07EE866C51F /* Pods-PHAirView-dummy.m */; };
+		BBD00EB07B1A434C1B92430A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC75C8E3E074128D8BC4F49C /* Foundation.framework */; };
+		C4DF716E292F8DC184186434 /* Pods-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A4DA784CE202E6C135107CF /* Pods-dummy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		5E03056C8F214A81A2BCD535 /* PBXContainerItemProxy */ = {
+		F8662D6A32366A2F9BC6A3B6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 582503C6466F4CD8804E593A /* Project object */;
+			containerPortal = D2D495374953DCE6C2B73512 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 85B77EAF5A054489919517F7;
+			remoteGlobalIDString = D59B94D19174B5430DB0CE8F;
 			remoteInfo = "Pods-PHAirView";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		24390657E4EF43BAA5CE41AF /* Pods-PHAirView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PHAirView-prefix.pch"; sourceTree = "<group>"; };
-		2B8A05D36B944D13961CD8C1 /* PHAirViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PHAirViewController.h; path = Source/PHAirViewController.h; sourceTree = "<group>"; };
-		38B6775819D66F65009F8291 /* PHAirViewAppearanceLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PHAirViewAppearanceLayout.h; path = Source/PHAirViewAppearanceLayout.h; sourceTree = "<group>"; };
-		38B6775919D66F65009F8291 /* PHAirViewAppearanceLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PHAirViewAppearanceLayout.m; path = Source/PHAirViewAppearanceLayout.m; sourceTree = "<group>"; };
-		38B6775E19D68269009F8291 /* PPImageTitleButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PPImageTitleButton.h; path = Source/PPImageTitleButton.h; sourceTree = "<group>"; };
-		38B6775F19D68269009F8291 /* PPImageTitleButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PPImageTitleButton.m; path = Source/PPImageTitleButton.m; sourceTree = "<group>"; };
-		4AED965099D24143A731ABAA /* PHSessionView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PHSessionView.m; path = Source/PHSessionView.m; sourceTree = "<group>"; };
-		6AD21B4B5C3B456D978BF9BA /* UIViewAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UIViewAdditions.h; path = Source/Library/KNAdditions/UIViewAdditions.h; sourceTree = "<group>"; };
-		6E5C0B9142254645A9600566 /* Pods-PHAirView-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PHAirView-Private.xcconfig"; sourceTree = "<group>"; };
-		6EED707C23D24055AC847574 /* Pods-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-resources.sh"; sourceTree = "<group>"; };
-		70B3440244664A0BB7C96609 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		84D9D9F317304C64ACC7B0EF /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.xcconfig; sourceTree = "<group>"; };
-		858D8D492EA24DEAA27BA53D /* Pods-PHAirView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PHAirView-dummy.m"; sourceTree = "<group>"; };
-		8B2E112CB8784DA1B8C636BF /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		8D0B443250814DEA8866BBC1 /* PHAirViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PHAirViewController.m; path = Source/PHAirViewController.m; sourceTree = "<group>"; };
-		997BC06C6EDE40519D0AA6D7 /* libPods-PHAirView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PHAirView.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		A4636B1EC1F740A7B46E5E17 /* Pods-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-acknowledgements.plist"; sourceTree = "<group>"; };
-		BD82207F6C93410A9CB81B02 /* Pods-PHAirView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PHAirView.xcconfig"; sourceTree = "<group>"; };
-		D8129168FED84D47B7D57DCE /* Pods-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-dummy.m"; sourceTree = "<group>"; };
-		E528C7191BD944428BF108B2 /* PHSessionView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PHSessionView.h; path = Source/PHSessionView.h; sourceTree = "<group>"; };
-		EBAA45FC0BCD42059429CDBB /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		F37DE2D4D5284E35802D433A /* Pods-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-environment.h"; sourceTree = "<group>"; };
-		F5173328D32E4F63B5499C97 /* UIViewAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = UIViewAdditions.m; path = Source/Library/KNAdditions/UIViewAdditions.m; sourceTree = "<group>"; };
-		FA321458BFDC41ADBBACAAF0 /* Pods-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-acknowledgements.markdown"; sourceTree = "<group>"; };
+		048FFC7C7D07541A642F71FB /* Pods-PHAirView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PHAirView-prefix.pch"; sourceTree = "<group>"; };
+		0991CD1430F1EDE59F97BF59 /* Pods-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-resources.sh"; sourceTree = "<group>"; };
+		0E7E400A06B18403EFC1CA44 /* PHAirViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PHAirViewController.m; path = Source/PHAirViewController.m; sourceTree = "<group>"; };
+		17155BB70E3902425DB2D549 /* libPods-PHAirView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PHAirView.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		17F86445716F33D5F0168377 /* Pods-PHAirView-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PHAirView-Private.xcconfig"; sourceTree = "<group>"; };
+		19D5781A57AD4BA78C797931 /* PHAirViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PHAirViewController.h; path = Source/PHAirViewController.h; sourceTree = "<group>"; };
+		1A6ECF626B4E461B9F333B71 /* PHAirViewAppearanceLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PHAirViewAppearanceLayout.m; path = Source/PHAirViewAppearanceLayout.m; sourceTree = "<group>"; };
+		2A4DA784CE202E6C135107CF /* Pods-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-dummy.m"; sourceTree = "<group>"; };
+		3AD2748CCBBE4148219A6DF6 /* PHSessionView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PHSessionView.m; path = Source/PHSessionView.m; sourceTree = "<group>"; };
+		46A829CF2709C07EE866C51F /* Pods-PHAirView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PHAirView-dummy.m"; sourceTree = "<group>"; };
+		4ACF690EE36B76EC4D0C97DF /* Pods-PHAirView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PHAirView.xcconfig"; sourceTree = "<group>"; };
+		5DC5E9CE90BFD328D81E26D6 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.release.xcconfig; sourceTree = "<group>"; };
+		665086A06755996DB5EAA4CB /* Pods-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-environment.h"; sourceTree = "<group>"; };
+		67FD68D7F604DEB16F0F1545 /* PPImageTitleButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PPImageTitleButton.h; path = Source/PPImageTitleButton.h; sourceTree = "<group>"; };
+		94E539B8387C02FFB318691E /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D3CC70FDE8E92262C2D76A9 /* Pods-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-acknowledgements.plist"; sourceTree = "<group>"; };
+		AC75C8E3E074128D8BC4F49C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		B0D1F474136396940D51371B /* UIViewAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = UIViewAdditions.m; path = Source/Library/KNAdditions/UIViewAdditions.m; sourceTree = "<group>"; };
+		B1E86A73A8AD81EB796D7BC4 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.debug.xcconfig; sourceTree = "<group>"; };
+		C187DB171C4E26A585AC43F1 /* UIViewAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UIViewAdditions.h; path = Source/Library/KNAdditions/UIViewAdditions.h; sourceTree = "<group>"; };
+		D08FF652A72BDAA46A6AAE0B /* PHSessionView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PHSessionView.h; path = Source/PHSessionView.h; sourceTree = "<group>"; };
+		D3E81F32C31823E1CF84ED7E /* PPImageTitleButton.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PPImageTitleButton.m; path = Source/PPImageTitleButton.m; sourceTree = "<group>"; };
+		E02AA80BF4D1FFAA79D2B72F /* Pods-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-acknowledgements.markdown"; sourceTree = "<group>"; };
+		E11CDB56DFD2007123FC93C7 /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		F6EED946722242AEA13AF029 /* PHAirViewAppearanceLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PHAirViewAppearanceLayout.h; path = Source/PHAirViewAppearanceLayout.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		AA565873974544FA9FAAB8DA /* Frameworks */ = {
+		2E40633F3A48DB904DB9F086 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6FDA802B661743FF88F13F64 /* Foundation.framework in Frameworks */,
-				A82C027ED47C41F79A9ECFF9 /* libPods-PHAirView.a in Frameworks */,
+				8FAA0837B48921BCC6981FDB /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E625AA53D02F488D9A02ED81 /* Frameworks */ = {
+		6B924311353B0A30F40D0EED /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2D11504B9D59424E93E58E30 /* Foundation.framework in Frameworks */,
+				BBD00EB07B1A434C1B92430A /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		3CFACC1990D249CBB50BC5FF /* Frameworks */ = {
+		0BEF0B7CD2516CD452DC2369 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				BA9D2C9F2A9945CBAFD3BFE6 /* iOS */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		7B35DF4CBBF04E72984E22A5 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				EBAA45FC0BCD42059429CDBB /* libPods.a */,
-				997BC06C6EDE40519D0AA6D7 /* libPods-PHAirView.a */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		7E002A249C864E05B8454886 = {
-			isa = PBXGroup;
-			children = (
-				8B2E112CB8784DA1B8C636BF /* Podfile */,
-				9EBFD37330E8405F97915E53 /* Development Pods */,
-				3CFACC1990D249CBB50BC5FF /* Frameworks */,
-				7B35DF4CBBF04E72984E22A5 /* Products */,
-				CDF960BFE55145D28F424F35 /* Targets Support Files */,
-			);
-			sourceTree = "<group>";
-		};
-		810E99D00ACB4E39AED5030E /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				84D9D9F317304C64ACC7B0EF /* Pods.xcconfig */,
-				FA321458BFDC41ADBBACAAF0 /* Pods-acknowledgements.markdown */,
-				A4636B1EC1F740A7B46E5E17 /* Pods-acknowledgements.plist */,
-				D8129168FED84D47B7D57DCE /* Pods-dummy.m */,
-				F37DE2D4D5284E35802D433A /* Pods-environment.h */,
-				6EED707C23D24055AC847574 /* Pods-resources.sh */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		9EBFD37330E8405F97915E53 /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				EB86FA089D254234B5E76466 /* PHAirView */,
+				2CC2E578C2D42BC789C95E16 /* PHAirView */,
 			);
 			name = "Development Pods";
 			sourceTree = "<group>";
 		};
-		BA9D2C9F2A9945CBAFD3BFE6 /* iOS */ = {
+		191607279F9DFBB50266AD1D = {
 			isa = PBXGroup;
 			children = (
-				70B3440244664A0BB7C96609 /* Foundation.framework */,
+				E11CDB56DFD2007123FC93C7 /* Podfile */,
+				0BEF0B7CD2516CD452DC2369 /* Development Pods */,
+				A58B2102661D450295C67FBB /* Frameworks */,
+				F5AC6DDC51B73E690D7108F3 /* Products */,
+				900768FF038DFC7E4FE6119C /* Targets Support Files */,
 			);
-			name = iOS;
 			sourceTree = "<group>";
 		};
-		BD3F2D32B75D4B6BA6E94FDB /* Support Files */ = {
+		2CC2E578C2D42BC789C95E16 /* PHAirView */ = {
 			isa = PBXGroup;
 			children = (
-				BD82207F6C93410A9CB81B02 /* Pods-PHAirView.xcconfig */,
-				6E5C0B9142254645A9600566 /* Pods-PHAirView-Private.xcconfig */,
-				858D8D492EA24DEAA27BA53D /* Pods-PHAirView-dummy.m */,
-				24390657E4EF43BAA5CE41AF /* Pods-PHAirView-prefix.pch */,
-			);
-			name = "Support Files";
-			sourceTree = SOURCE_ROOT;
-		};
-		CDF960BFE55145D28F424F35 /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				810E99D00ACB4E39AED5030E /* Pods */,
-			);
-			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		EB86FA089D254234B5E76466 /* PHAirView */ = {
-			isa = PBXGroup;
-			children = (
-				38B6775819D66F65009F8291 /* PHAirViewAppearanceLayout.h */,
-				38B6775919D66F65009F8291 /* PHAirViewAppearanceLayout.m */,
-				2B8A05D36B944D13961CD8C1 /* PHAirViewController.h */,
-				8D0B443250814DEA8866BBC1 /* PHAirViewController.m */,
-				E528C7191BD944428BF108B2 /* PHSessionView.h */,
-				4AED965099D24143A731ABAA /* PHSessionView.m */,
-				6AD21B4B5C3B456D978BF9BA /* UIViewAdditions.h */,
-				F5173328D32E4F63B5499C97 /* UIViewAdditions.m */,
-				38B6775E19D68269009F8291 /* PPImageTitleButton.h */,
-				38B6775F19D68269009F8291 /* PPImageTitleButton.m */,
-				BD3F2D32B75D4B6BA6E94FDB /* Support Files */,
+				F6EED946722242AEA13AF029 /* PHAirViewAppearanceLayout.h */,
+				1A6ECF626B4E461B9F333B71 /* PHAirViewAppearanceLayout.m */,
+				19D5781A57AD4BA78C797931 /* PHAirViewController.h */,
+				0E7E400A06B18403EFC1CA44 /* PHAirViewController.m */,
+				D08FF652A72BDAA46A6AAE0B /* PHSessionView.h */,
+				3AD2748CCBBE4148219A6DF6 /* PHSessionView.m */,
+				67FD68D7F604DEB16F0F1545 /* PPImageTitleButton.h */,
+				D3E81F32C31823E1CF84ED7E /* PPImageTitleButton.m */,
+				C187DB171C4E26A585AC43F1 /* UIViewAdditions.h */,
+				B0D1F474136396940D51371B /* UIViewAdditions.m */,
+				A28AF866E1257989C19E8391 /* Support Files */,
 			);
 			name = PHAirView;
 			path = ../..;
 			sourceTree = "<group>";
 		};
+		900768FF038DFC7E4FE6119C /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				9AFBAAA1F7DA0C6412F272C2 /* Pods */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		9AFBAAA1F7DA0C6412F272C2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E02AA80BF4D1FFAA79D2B72F /* Pods-acknowledgements.markdown */,
+				9D3CC70FDE8E92262C2D76A9 /* Pods-acknowledgements.plist */,
+				2A4DA784CE202E6C135107CF /* Pods-dummy.m */,
+				665086A06755996DB5EAA4CB /* Pods-environment.h */,
+				0991CD1430F1EDE59F97BF59 /* Pods-resources.sh */,
+				B1E86A73A8AD81EB796D7BC4 /* Pods.debug.xcconfig */,
+				5DC5E9CE90BFD328D81E26D6 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			path = "Target Support Files/Pods";
+			sourceTree = "<group>";
+		};
+		A28AF866E1257989C19E8391 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				4ACF690EE36B76EC4D0C97DF /* Pods-PHAirView.xcconfig */,
+				17F86445716F33D5F0168377 /* Pods-PHAirView-Private.xcconfig */,
+				46A829CF2709C07EE866C51F /* Pods-PHAirView-dummy.m */,
+				048FFC7C7D07541A642F71FB /* Pods-PHAirView-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "Demo2/Pods/Target Support Files/Pods-PHAirView";
+			sourceTree = "<group>";
+		};
+		A58B2102661D450295C67FBB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D520872B904F34987B8FDE6F /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D520872B904F34987B8FDE6F /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				AC75C8E3E074128D8BC4F49C /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		F5AC6DDC51B73E690D7108F3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				94E539B8387C02FFB318691E /* libPods.a */,
+				17155BB70E3902425DB2D549 /* libPods-PHAirView.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		9BCDAD8FE9E34C2D89D454C1 /* Headers */ = {
+		E105E5716BFBAE24A0D1AFF9 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				09231C99A5A543988934C81A /* PHAirViewController.h in Headers */,
-				3409740636FE4BE9B2A91788 /* PHSessionView.h in Headers */,
-				F91E2CF65D034960B28F8428 /* UIViewAdditions.h in Headers */,
+				71526BE0C02B6731ADB5D426 /* PHAirViewAppearanceLayout.h in Headers */,
+				3F11B94E0D20D976F6689A8B /* PHAirViewController.h in Headers */,
+				48F31056689B48F34D7FA97B /* PHSessionView.h in Headers */,
+				6C90AFB4FC60EAF060269BA2 /* PPImageTitleButton.h in Headers */,
+				6B6AE36F63F19D8CD78D5D49 /* UIViewAdditions.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		6385EDDED72542359D063803 /* Pods */ = {
+		588E0FD33A8400761D21526B /* Pods */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6455A56F296444428B11A4E0 /* Build configuration list for PBXNativeTarget "Pods" */;
+			buildConfigurationList = 9C5D0CB6714B554DDE3009DC /* Build configuration list for PBXNativeTarget "Pods" */;
 			buildPhases = (
-				CEF3BAC5A3B444B38F3D23BC /* Sources */,
-				AA565873974544FA9FAAB8DA /* Frameworks */,
+				FC328BBB31D204D3FAB19775 /* Sources */,
+				6B924311353B0A30F40D0EED /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				E7F1D457B0834D93BFBB7C99 /* PBXTargetDependency */,
+				89FEC04B961A3118CA38FE48 /* PBXTargetDependency */,
 			);
 			name = Pods;
 			productName = Pods;
-			productReference = EBAA45FC0BCD42059429CDBB /* libPods.a */;
+			productReference = 94E539B8387C02FFB318691E /* libPods.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		85B77EAF5A054489919517F7 /* Pods-PHAirView */ = {
+		D59B94D19174B5430DB0CE8F /* Pods-PHAirView */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 096A3B32CEA0436983639347 /* Build configuration list for PBXNativeTarget "Pods-PHAirView" */;
+			buildConfigurationList = BB4FC0875753EB0A8CF79203 /* Build configuration list for PBXNativeTarget "Pods-PHAirView" */;
 			buildPhases = (
-				4AF976AC648B44DA8AAFA19B /* Sources */,
-				E625AA53D02F488D9A02ED81 /* Frameworks */,
-				9BCDAD8FE9E34C2D89D454C1 /* Headers */,
+				AE0F630EF910900C8936134D /* Sources */,
+				2E40633F3A48DB904DB9F086 /* Frameworks */,
+				E105E5716BFBAE24A0D1AFF9 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -222,137 +228,77 @@
 			);
 			name = "Pods-PHAirView";
 			productName = "Pods-PHAirView";
-			productReference = 997BC06C6EDE40519D0AA6D7 /* libPods-PHAirView.a */;
+			productReference = 17155BB70E3902425DB2D549 /* libPods-PHAirView.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		582503C6466F4CD8804E593A /* Project object */ = {
+		D2D495374953DCE6C2B73512 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0510;
+				LastUpgradeCheck = 0610;
 			};
-			buildConfigurationList = B3ACAA9D96C748C1A31DEE60 /* Build configuration list for PBXProject "Pods" */;
+			buildConfigurationList = B5D627121F28F6DC0DE3FDAF /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = 7E002A249C864E05B8454886;
-			productRefGroup = 7B35DF4CBBF04E72984E22A5 /* Products */;
+			mainGroup = 191607279F9DFBB50266AD1D;
+			productRefGroup = F5AC6DDC51B73E690D7108F3 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				6385EDDED72542359D063803 /* Pods */,
-				85B77EAF5A054489919517F7 /* Pods-PHAirView */,
+				588E0FD33A8400761D21526B /* Pods */,
+				D59B94D19174B5430DB0CE8F /* Pods-PHAirView */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		4AF976AC648B44DA8AAFA19B /* Sources */ = {
+		AE0F630EF910900C8936134D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6C8724A049974C878BF5C5F1 /* PHAirViewController.m in Sources */,
-				4BFF001CDDED46F5B1D1F83C /* PHSessionView.m in Sources */,
-				74EDFA663C484C13B12F08AB /* Pods-PHAirView-dummy.m in Sources */,
-				1E83F895960C4427A63B19BD /* UIViewAdditions.m in Sources */,
+				7648ECF8C822E0FDCB7A8E8D /* PHAirViewAppearanceLayout.m in Sources */,
+				3E4BDBD180CC445AE2A6DCEE /* PHAirViewController.m in Sources */,
+				62C6968D73F18AE9357EFECB /* PHSessionView.m in Sources */,
+				1C941992539CD2C8D6576FEB /* PPImageTitleButton.m in Sources */,
+				A0867704D1A4E2519725FA59 /* Pods-PHAirView-dummy.m in Sources */,
+				3A01055253B7F88F88E22A26 /* UIViewAdditions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CEF3BAC5A3B444B38F3D23BC /* Sources */ = {
+		FC328BBB31D204D3FAB19775 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				30562033471F4C0FBFE9D68C /* Pods-dummy.m in Sources */,
-				38B6776019D68269009F8291 /* PPImageTitleButton.m in Sources */,
-				38B6775A19D66F65009F8291 /* PHAirViewAppearanceLayout.m in Sources */,
+				C4DF716E292F8DC184186434 /* Pods-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		E7F1D457B0834D93BFBB7C99 /* PBXTargetDependency */ = {
+		89FEC04B961A3118CA38FE48 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 85B77EAF5A054489919517F7 /* Pods-PHAirView */;
-			targetProxy = 5E03056C8F214A81A2BCD535 /* PBXContainerItemProxy */;
+			name = "Pods-PHAirView";
+			target = D59B94D19174B5430DB0CE8F /* Pods-PHAirView */;
+			targetProxy = F8662D6A32366A2F9BC6A3B6 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		04C4212A01DA4C77AE2C6BA2 /* Debug */ = {
+		1169A6B40C1CB142457181A2 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 84D9D9F317304C64ACC7B0EF /* Pods.xcconfig */;
+			baseConfigurationReference = 5DC5E9CE90BFD328D81E26D6 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = armv7;
-				COPY_PHASE_STRIP = NO;
-				DSTROOT = /tmp/xcodeproj.dst;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
-				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
-				OTHER_LDFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		372229EE42534121B3F03001 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6E5C0B9142254645A9600566 /* Pods-PHAirView-Private.xcconfig */;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = armv7;
-				COPY_PHASE_STRIP = NO;
-				DSTROOT = /tmp/xcodeproj.dst;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Pods-PHAirView-prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
-				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
-				OTHER_LDFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		6B95CCE101644654B84A20ED /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6E5C0B9142254645A9600566 /* Pods-PHAirView-Private.xcconfig */;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = armv7;
 				COPY_PHASE_STRIP = YES;
 				DSTROOT = /tmp/xcodeproj.dst;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Pods-PHAirView-prefix.pch";
-				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				OTHER_CFLAGS = (
@@ -364,6 +310,7 @@
 					"$(inherited)",
 				);
 				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
@@ -372,14 +319,127 @@
 			};
 			name = Release;
 		};
-		9C3AE771D1814B71B1765A04 /* Debug */ = {
+		2AE76484CBB430755CC09767 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 17F86445716F33D5F0168377 /* Pods-PHAirView-Private.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				DSTROOT = /tmp/xcodeproj.dst;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-PHAirView/Pods-PHAirView-prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		2C3DE801AB3AC0FBD446A5F1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 17F86445716F33D5F0168377 /* Pods-PHAirView-Private.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DSTROOT = /tmp/xcodeproj.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-PHAirView/Pods-PHAirView-prefix.pch";
+				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = (
+					"-DNS_BLOCK_ASSERTIONS=1",
+					"$(inherited)",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DNS_BLOCK_ASSERTIONS=1",
+					"$(inherited)",
+				);
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2ECCE48EE8A2759F18366EE1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B1E86A73A8AD81EB796D7BC4 /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				DSTROOT = /tmp/xcodeproj.dst;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		AA1A1E482F865BCDA620FE6D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				STRIP_INSTALLED_PRODUCT = NO;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FBD11BCD6270BDB7E4D53287 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
@@ -408,97 +468,37 @@
 			};
 			name = Debug;
 		};
-		A36C65994FA74279902F5CF2 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = NO;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES;
-				COPY_PHASE_STRIP = NO;
-				ENABLE_NS_ASSERTIONS = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
-				STRIP_INSTALLED_PRODUCT = NO;
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		D8847C129C844AC3866BEEA9 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 84D9D9F317304C64ACC7B0EF /* Pods.xcconfig */;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = armv7;
-				COPY_PHASE_STRIP = YES;
-				DSTROOT = /tmp/xcodeproj.dst;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
-				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
-				OTHER_CFLAGS = (
-					"-DNS_BLOCK_ASSERTIONS=1",
-					"$(inherited)",
-				);
-				OTHER_CPLUSPLUSFLAGS = (
-					"-DNS_BLOCK_ASSERTIONS=1",
-					"$(inherited)",
-				);
-				OTHER_LDFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		096A3B32CEA0436983639347 /* Build configuration list for PBXNativeTarget "Pods-PHAirView" */ = {
+		9C5D0CB6714B554DDE3009DC /* Build configuration list for PBXNativeTarget "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				372229EE42534121B3F03001 /* Debug */,
-				6B95CCE101644654B84A20ED /* Release */,
+				2ECCE48EE8A2759F18366EE1 /* Debug */,
+				1169A6B40C1CB142457181A2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6455A56F296444428B11A4E0 /* Build configuration list for PBXNativeTarget "Pods" */ = {
+		B5D627121F28F6DC0DE3FDAF /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				04C4212A01DA4C77AE2C6BA2 /* Debug */,
-				D8847C129C844AC3866BEEA9 /* Release */,
+				FBD11BCD6270BDB7E4D53287 /* Debug */,
+				AA1A1E482F865BCDA620FE6D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B3ACAA9D96C748C1A31DEE60 /* Build configuration list for PBXProject "Pods" */ = {
+		BB4FC0875753EB0A8CF79203 /* Build configuration list for PBXNativeTarget "Pods-PHAirView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9C3AE771D1814B71B1765A04 /* Debug */,
-				A36C65994FA74279902F5CF2 /* Release */,
+				2AE76484CBB430755CC09767 /* Debug */,
+				2C3DE801AB3AC0FBD446A5F1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 582503C6466F4CD8804E593A /* Project object */;
+	rootObject = D2D495374953DCE6C2B73512 /* Project object */;
 }
