@@ -511,7 +511,7 @@ static NSString * const PHSegueRootIdentifier  = @"phair_root";
     // Prev index
     currentIndexSession --;
     if (currentIndexSession < 0) {
-        currentIndexSession = sessionViews.count - 1;
+        currentIndexSession = (int)sessionViews.count - 1;
     }
     
     // Get thumbnailImage
