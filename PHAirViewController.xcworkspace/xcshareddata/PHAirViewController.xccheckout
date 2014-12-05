@@ -14,6 +14,8 @@
 		<string>https://github.com/pzhao5/PHAirViewController.git</string>
 		<key>9BB3AC6F-65A1-4A09-A855-30D7CD3A64D0</key>
 		<string>ssh://github.com/thedamfr/PHAirViewController.git</string>
+		<key>F75EF3D765E6815B091CEB4202CFE09DCA4DD48D</key>
+		<string>github.com:Cargo-Labs/cargo-ios.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>PHAirViewController.xcworkspace</string>
@@ -23,6 +25,8 @@
 		<string>..</string>
 		<key>9BB3AC6F-65A1-4A09-A855-30D7CD3A64D0</key>
 		<string>../../PHAirViewController-myfork</string>
+		<key>F75EF3D765E6815B091CEB4202CFE09DCA4DD48D</key>
+		<string>../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/pzhao5/PHAirViewController.git</string>
@@ -32,6 +36,14 @@
 	<string>67EA9522AA88A1DA9DA6DB40ACC54E5CFF272BBC</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>F75EF3D765E6815B091CEB4202CFE09DCA4DD48D</string>
+			<key>IDESourceControlWCCName</key>
+			<string>..</string>
+		</dict>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
