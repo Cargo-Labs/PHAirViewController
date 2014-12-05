@@ -651,8 +651,7 @@ static NSString * const PHSegueRootIdentifier  = @"phair_root";
             [sessionViews setObject:sessionView forKey:@(i)];
         }
         // Set title for header session
-        NSString * sesionTitle = [self.dataSource titleForHeaderAtSession:i];
-        [sessionView.titleButton setTitle:sesionTitle forState:UIControlStateNormal];
+        [sessionView.titleButton setTitle:[self.dataSource titleForHeaderAtSession:i] forState:UIControlStateNormal];
         
         if ([self.dataSource respondsToSelector:@selector(thumbnailForHeaderAtSession:)]) {
             [sessionView.titleButton setImageForSingleState:[self.dataSource thumbnailForHeaderAtSession:i]];
@@ -939,6 +938,7 @@ static NSString * const PHSegueRootIdentifier  = @"phair_root";
   _leftView.layer.transform = CATransform3DIdentity;
   _leftView.frame = CGRectMake(0, -(self.view.height), kSessionWidth, self.view.height*3);
 }
+
 #pragma mark - Show/Hide air view controller
 
 - (void)showAirViewFromViewController:(UIViewController*)controller
