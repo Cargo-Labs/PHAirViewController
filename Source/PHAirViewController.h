@@ -41,6 +41,8 @@
 - (UIImage*)viewControllerSnapshotAtIndexPath:(NSIndexPath*)indexPath;
 - (NSString*)segueForRowAtIndexPath:(NSIndexPath*)indexPath;
 - (UIViewController*)viewControllerForIndexPath:(NSIndexPath*)indexPath;
+- (NSString *)segueForRootViewController;
+
 @end
 
 @class PHAirViewAppearanceLayout;

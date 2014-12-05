@@ -78,6 +78,9 @@ static NSString * const PHSegueRootIdentifier  = @"phair_root";
 // showAirView indicate whether to show PHAirViewController or show frontViewController;
 @property (nonatomic, assign) BOOL showAirView;
 @property (nonatomic, assign) CGFloat previousRightViewOpenInteractionInPercent;
+
+@property (nonatomic, retain) NSString *rootSegueIdentifier;
+
 @end
 
 @implementation PHAirViewController {
@@ -164,6 +167,13 @@ static NSString * const PHSegueRootIdentifier  = @"phair_root";
         _appearanceLayout = [self.delegate appearanceLayout];
     }
     
+    // get root segue
+    if ([self.dataSource respondsToSelector:@selector(segueForRootViewController)]) {
+        _rootSegueIdentifier = [self.dataSource segueForRootViewController];
+    } else {
+        _rootSegueIdentifier = PHSegueRootIdentifier;
+    }
+        
     // Init contentView
     [self.view addSubview:self.wrapperView];
     [self.wrapperView addSubview:self.contentView];
@@ -183,7 +193,7 @@ static NSString * const PHSegueRootIdentifier  = @"phair_root";
     // Init root view controller
     if ( self.storyboard) {
         @try {
-            [self performSegueWithIdentifier:PHSegueRootIdentifier sender:nil];
+            [self performSegueWithIdentifier:_rootSegueIdentifier sender:nil];
         }
         @catch(NSException *exception) {}
     }
@@ -256,7 +266,7 @@ static NSString * const PHSegueRootIdentifier  = @"phair_root";
     if ( [segue isKindOfClass:[PHAirViewControllerSegue class]] && sender == nil )
     {
         NSIndexPath * nextIndexPath = self.currentIndexPath;
-        if ([segue.identifier isEqualToString:PHSegueRootIdentifier]) {
+        if ([segue.identifier isEqualToString:_rootSegueIdentifier]) {
             if (self.delegate && [self.delegate respondsToSelector:@selector(indexPathDefaultValue)]) {
                 nextIndexPath = [self.delegate indexPathDefaultValue];
             }
@@ -848,7 +858,10 @@ static NSString * const PHSegueRootIdentifier  = @"phair_root";
                     @try {
                         [self performSegueWithIdentifier:segue sender:nil];
                     }
-                    @catch(NSException *exception) {}
+                    @catch(NSException *exception) {
+                        NSLog(@"Failed to segue to %@",segue);
+                        [self performSegueWithIdentifier:_rootSegueIdentifier sender:nil];
+                    }
                 }
             } else {
                 // Sử dụng viewController
